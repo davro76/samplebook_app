@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataCollectionPage</title>
+</head>
+<body>
+    <form action="" method="post"></form>
+    <h1 align="center"><strong><u>Fill Out The Following Form</strong></u></h1>
+    <form method="post" action="">
+        <div class="department">
+            <h3><i>Data Collection related to Department</i></h2>
+                <label>*Department Number</label> <select size="1",name="deptnum" id="deptnum" required="required">
+                    <option>Select a Department number</option>
+                    <option value="d1">d1</option>
+                    <option value="d2">d2</option>
+                    <option value="d3">d3</option>
+                    <option value="d4">d4</option>
+                </select><br><br>
+
+                <label>*Department Name</label> <select size="1" name="deptnam" id="deptnam" required="required">
+                    <option>Select a Department Name</option>
+                    <option value="research">Research</option>
+                    <option value="accounting">Accounting</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="data_analysis">Data Analysis</option>
+                   </select><br><br>
+
+                <label for="state">State Name</label>
+                <select name="state" id="state" required="required" onchange="updateCities()">
+                  <option>Select a State Name</option>
+                  <option value="Florida">Florida</option>
+                  <option value="Georgia">Georgia</option>
+                </select><br><br>
+
+                <label for="city">City Name</label>
+                <select id="city">
+                    <option>Select a City Name</option>
+                </select>
+        </div>
+        <br><br>
+        <div class="submit_reset">
+            <input type="submit" id="submit" name="submit" value="Submit Form">&nbsp;
+            <input type="reset" id="reset" name="reset" value="Reset Form">
+
+        </div>
+    </form>
+    <script src="app.js"></script>
+    <footer>
+        <p> <small>Copyright &copy; November 2023 <b>Rodney Davermann for BERINGS</b>.All Rights Reserved.</small></p> 
+     </footer>
+</body>
+</html>
